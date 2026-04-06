@@ -1,10 +1,8 @@
-# 📁 Path: `.github/workflows/snake.yml`
-
 name: Generate Snake
 
 on:
 schedule:
-- cron: "0 */12 * * *"   # runs every 12 hours
+- cron: "0 */12 * * *"
 workflow_dispatch:
 
 jobs:
@@ -20,7 +18,7 @@ steps:
       outputs: |
         dist/github-contribution-grid-snake.svg
 
-  - name: Push to output branch
+  - name: Push snake to output branch
     uses: crazy-max/ghaction-github-pages@v3
     with:
       target_branch: output
