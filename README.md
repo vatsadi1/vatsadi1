@@ -62,17 +62,36 @@
 
 ## ⚙️ Backend (Production API)
 
-### 📝 Notes API (Deployed on Render)
+### 📝 Notes App (Full Stack — AWS EC2)
 
-🔗 https://cohort-2-0-cllb.onrender.com/
-🔗 https://github.com/Vatsadi1/your-notes-repo
+🔗 Live: http://51.20.67.178:3000/
+💻 Code: https://github.com/Vatsadi1/your-notes-repo
 
-**Features:**
+**Highlights:**
 
-* JWT Authentication (Login/Register)
-* CRUD operations with protected routes
-* RESTful API architecture
-* Error handling & middleware
+* 🔐 JWT Authentication (Login/Register)
+* 🧩 Full CRUD (Create, Read, Update, Delete Notes)
+* 🛡️ Protected Routes with middleware
+* ⚡ RESTful API design
+
+**Infrastructure:**
+
+* Deployed on **AWS EC2 (Ubuntu server)**
+* Node.js server running on custom port (3000)
+* Managed backend services and deployment manually
+
+---
+
+## 🧪 API Example
+
+POST /api/notes
+Authorization: Bearer <token>
+
+{
+"title": "Note title",
+"content": "Note content"
+}
+
 
 ---
 
